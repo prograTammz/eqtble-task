@@ -6,13 +6,27 @@ The project consist of 3 Parts all of them are dockerized and composed together 
    docker-compose up --build
 ```
 
+## Structure
+
 The three parts are:
 
-- The Front-end which is a react app
+- The Front-end which is a react app using create-react-app with material-ui
 - The Backend for API using Django
 - The Backend for Dummy Employee Database for Parse & Query using Flask
 
+Both of the backends use PostgreSQL with a dockerized volumes
+
 The front-end Communicate with the Django API and Django API communicate with flask server for queries and parsing of yaml file, design wise there should be a Redis caching in middle of them.
+
+## Usage
+
+When docker-compose will take care of setting up everything all you need to do is to run the app on browser with:
+
+```bash
+   http://localhost:3000
+```
+
+And you will have 3 schema files to use it to upload or copy and paste it!
 
 # [FRONT-END] YAML Editor and Query Builder
 
