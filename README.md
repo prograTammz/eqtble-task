@@ -1,3 +1,19 @@
+# Eqtable Task
+
+The project consist of 3 Parts all of them are dockerized and composed together with docker compose all you need to do is run the following command:
+
+```bash
+   docker-compose up --build
+```
+
+The three parts are:
+
+- The Front-end which is a react app
+- The Backend for API using Django
+- The Backend for Dummy Employee Database for Parse & Query using Flask
+
+The front-end Communicate with the Django API and Django API communicate with flask server for queries and parsing of yaml file, design wise there should be a Redis caching in middle of them.
+
 # [FRONT-END] YAML Editor and Query Builder
 
 ## Overview
