@@ -1,0 +1,24 @@
+table:
+  - name: Department
+    sql_table: department
+    sql: SELECT * FROM department
+
+    measures:
+      - name: count
+        type: count
+        sql: "COUNT(*)"
+        drillMembers:
+          - id
+          - name
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primaryKey: true
+      - name: name
+        sql: name
+        type: string
+      - name: location
+        sql: location
+        type: string

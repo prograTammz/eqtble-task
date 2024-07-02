@@ -1,0 +1,33 @@
+table:
+  - name: Employee
+    sql: SELECT * FROM employees
+
+    measures:
+      - name: Headcount
+        type: count
+        sql: "COUNT(*)"
+        drillMembers:
+          - id
+          - name
+          - hireDate
+      - name: averageAge
+        sql: age
+        type: avg
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primaryKey: true
+      - name: name
+        sql: name
+        type: string
+      - name: departmentId
+        sql: department_id
+        type: number
+      - name: age
+        sql: age
+        type: number
+      - name: hireDate
+        sql: hire_date
+        type: time

@@ -1,0 +1,26 @@
+table:
+  name: Salary
+  sql: SELECT * FROM salaries
+
+  measures:
+    - name: totalSalary
+      sql: amount
+      type: sum
+    - name: averageSalary
+      sql: amount
+      type: avg
+
+  dimensions:
+    - name: id
+      sql: id
+      type: number
+      primaryKey: true
+    - name: employeeId
+      sql: employee_id
+      type: number
+    - name: amount
+      sql: amount
+      type: number
+    - name: date
+      sql: date
+      type: time
