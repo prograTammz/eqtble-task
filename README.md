@@ -1,6 +1,10 @@
 # Eqtable Task
 
-The project consist of 3 Parts all of them are dockerized and composed together with docker compose all you need to do is run the following command:
+The project consist of 3 Parts all of them are dockerized and composed together with docker compose all you need to do is:
+
+1- Copy .env file to _**backend**_ folder, the .env
+
+2- run the following command:
 
 ```bash
    docker-compose up --build
